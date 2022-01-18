@@ -1,0 +1,45 @@
+.HomePageContainer{
+    border-radius: 3px;
+    width: 76%;
+    margin: 0 auto;
+    height: 90%;
+
+    text-align: center;
+    background-color: white;
+    justify-content: space-around;
+    box-shadow: 0px 10px 50px rgb(141, 142, 158)
+}
+.mainview{
+    display: flex;
+    
+}
+.forScroll{
+    overflow-x: scroll;
+    scroll-behavior:smooth;
+    margin-left: 15px;
+    height: 250px;
+}
+
+::-webkit-scrollbar{
+     width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: 0px 10px 50px rgb(34, 233, 8);
+    background:  rgba(0,222,0,0.4);
+    
+}
+::-webkit-scrollbar-button{
+    background: rgb(31, 150, 15);
+    box-shadow: rgb(233, 181, 37);
+    color:white;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-button:hover{
+    background-color:rgb(233, 181, 37);
+}
+.scrollnCat{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin-left: 15px;
+}

@@ -1,0 +1,4 @@
+.biglist{
+    display: flex;
+    list-style: none;
+}

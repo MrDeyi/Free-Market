@@ -1,0 +1,36 @@
+.SmallProductContainer{
+    height: 200px;
+    border-radius: 10px;
+    width: 200px;
+    background: white;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 10px 50px rgb(34, 233, 8)
+}
+.SmallProductImage,.Smallphoto{
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+}
+.SmallfootBar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+
+}
+.SmallLikeImage{
+    
+    height: 50px;
+    width: 50px;
+}
+.Smalllikeimg{
+    height: 30px;
+    width: 30px;
+}
+.SmallProductContainer:hover{
+    box-shadow: 0px 10px 50px rgb(37,50,233,1)
+  }
