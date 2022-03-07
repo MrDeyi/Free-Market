@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import './App.css';
-import Addstock from './components/addStock.js';
-import Product from './components/Product';
+
 import HomePage from './Web_site_home_page/homepage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
  
@@ -11,6 +9,7 @@ function App() {
     <div className="App">
      
      <HomePage/>
+    
       
     </div>
   );

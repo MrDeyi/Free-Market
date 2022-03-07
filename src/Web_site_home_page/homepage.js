@@ -1,12 +1,13 @@
 import { useContext, useState } from 'react';
-import Categoryx from '../components/Category';
-import Categorylist from '../components/categorylist';
-import Product from '../components/Product';
+import {BrowserRouter ,Routes,Route} from 'react-router-dom';
 import ProductList from '../components/ProductList';
+import AboutUs from '../components/AboutUs';
+import { ContactUs } from '../components/SendEmail';
 import SmallProduct from '../components/SmallProduct';
 import DetailedContext from '../Keep/DetailedView';
 import './homepage.css'
 import Navigation from './Navigation';
+import Sell from '../components/Sell';
 
 
 
@@ -33,18 +34,43 @@ import Navigation from './Navigation';
         }
 
     ]
-   
+   ;
 
 function HomePage(){
     const detailedcat=useContext(DetailedContext);
-   
+    console.log(detailedcat.detailed);
 
     return(
+        <BrowserRouter>
+       
         <div className='HomePageContainer'>
            <Navigation/>
           
-         
-         <div className='mainview'>
+           <div className='forScroll'>
+           <Routes>
+           <Route path='/'exact element={<ProductList MyDatabase={detailedcat.fashions}/>}/>
+            <Route path='/about' element={<AboutUs/>}/>
+            <Route path='/sell' element={<Sell/>}/>
+           </Routes>
+            </div>
+        </div>
+      
+        
+
+        
+        </BrowserRouter>
+        
+
+
+    )
+   
+}
+export default HomePage;
+
+/*   <div className='forScroll'>
+             <ProductList MyDatabase={detailedcat.fashions}/>
+            </div> */
+/*   <div className='mainview'>
             <Product/>
             <div className='scrollnCat'>
 
@@ -57,13 +83,11 @@ function HomePage(){
               </div>
             </div>
            
-         </div>       
+         </div>
+         
+         
+          <div className='forScroll'>
+             <ProductList MyDatabase={detailedcat.fashions}/>
+            </div>
 
-        </div>
-        
-
-
-    )
-   
-}
-export default HomePage;
+ */
